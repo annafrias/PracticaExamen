@@ -16,6 +16,15 @@
 		0585A41A2930070300A0EDA2 /* pruebafinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4192930070300A0EDA2 /* pruebafinalTests.swift */; };
 		0585A4242930070300A0EDA2 /* pruebafinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4232930070300A0EDA2 /* pruebafinalUITests.swift */; };
 		0585A4262930070300A0EDA2 /* pruebafinalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4252930070300A0EDA2 /* pruebafinalUITestsLaunchTests.swift */; };
+		0585A4432930104A00A0EDA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4422930104A00A0EDA2 /* HomeViewController.swift */; };
+		0585A4452930106100A0EDA2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0585A4442930106100A0EDA2 /* HomeViewController.xib */; };
+		0585A4472930107100A0EDA2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4462930107100A0EDA2 /* HomePresenter.swift */; };
+		0585A4492930107E00A0EDA2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4482930107E00A0EDA2 /* HomeInteractor.swift */; };
+		0585A44B2930108A00A0EDA2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A44A2930108A00A0EDA2 /* HomeCoordinator.swift */; };
+		0585A44D293010A400A0EDA2 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A44C293010A400A0EDA2 /* HomeContract.swift */; };
+		0585A44F293010B400A0EDA2 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A44E293010B400A0EDA2 /* HomeService.swift */; };
+		0585A451293014B100A0EDA2 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A450293014B100A0EDA2 /* CoordinatorProtocol.swift */; };
+		0585A453293014BF00A0EDA2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A452293014BF00A0EDA2 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		0585A41F2930070300A0EDA2 /* pruebafinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pruebafinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0585A4232930070300A0EDA2 /* pruebafinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebafinalUITests.swift; sourceTree = "<group>"; };
 		0585A4252930070300A0EDA2 /* pruebafinalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pruebafinalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0585A4422930104A00A0EDA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0585A4442930106100A0EDA2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0585A4462930107100A0EDA2 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		0585A4482930107E00A0EDA2 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		0585A44A2930108A00A0EDA2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		0585A44C293010A400A0EDA2 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		0585A44E293010B400A0EDA2 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		0585A450293014B100A0EDA2 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		0585A452293014BF00A0EDA2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +117,8 @@
 		0585A4012930070200A0EDA2 /* pruebafinal */ = {
 			isa = PBXGroup;
 			children = (
-				0585A4022930070200A0EDA2 /* AppDelegate.swift */,
-				0585A4042930070200A0EDA2 /* SceneDelegate.swift */,
+				0585A4342930092B00A0EDA2 /* Assets */,
+				0585A4322930091600A0EDA2 /* Classes */,
 				0585A4062930070200A0EDA2 /* ViewController.swift */,
 				0585A4082930070200A0EDA2 /* Main.storyboard */,
 				0585A40B2930070300A0EDA2 /* Assets.xcassets */,
@@ -125,6 +143,111 @@
 				0585A4252930070300A0EDA2 /* pruebafinalUITestsLaunchTests.swift */,
 			);
 			path = pruebafinalUITests;
+			sourceTree = "<group>";
+		};
+		0585A4322930091600A0EDA2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0585A43C29300E5900A0EDA2 /* Api */,
+				0585A43B29300E4F00A0EDA2 /* Model */,
+				0585A43A29300E4400A0EDA2 /* Screens */,
+				0585A43829300E2400A0EDA2 /* Bases */,
+				0585A43729300E1900A0EDA2 /* App */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0585A4342930092B00A0EDA2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		0585A43729300E1900A0EDA2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0585A4042930070200A0EDA2 /* SceneDelegate.swift */,
+				0585A4022930070200A0EDA2 /* AppDelegate.swift */,
+				0585A43E29300E9A00A0EDA2 /* Coordiantor */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		0585A43829300E2400A0EDA2 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Bases;
+			sourceTree = "<group>";
+		};
+		0585A43A29300E4400A0EDA2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0585A4412930102D00A0EDA2 /* Home */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		0585A43B29300E4F00A0EDA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0585A44029300EBD00A0EDA2 /* ModelProtocol */,
+				0585A43F29300EB400A0EDA2 /* ModelAPI */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0585A43C29300E5900A0EDA2 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0585A43D29300E8600A0EDA2 /* Service */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		0585A43D29300E8600A0EDA2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		0585A43E29300E9A00A0EDA2 /* Coordiantor */ = {
+			isa = PBXGroup;
+			children = (
+				0585A450293014B100A0EDA2 /* CoordinatorProtocol.swift */,
+				0585A452293014BF00A0EDA2 /* AppCoordinator.swift */,
+			);
+			name = Coordiantor;
+			sourceTree = "<group>";
+		};
+		0585A43F29300EB400A0EDA2 /* ModelAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelAPI;
+			sourceTree = "<group>";
+		};
+		0585A44029300EBD00A0EDA2 /* ModelProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelProtocol;
+			sourceTree = "<group>";
+		};
+		0585A4412930102D00A0EDA2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0585A4422930104A00A0EDA2 /* HomeViewController.swift */,
+				0585A4442930106100A0EDA2 /* HomeViewController.xib */,
+				0585A4462930107100A0EDA2 /* HomePresenter.swift */,
+				0585A4482930107E00A0EDA2 /* HomeInteractor.swift */,
+				0585A44C293010A400A0EDA2 /* HomeContract.swift */,
+				0585A44A2930108A00A0EDA2 /* HomeCoordinator.swift */,
+				0585A44E293010B400A0EDA2 /* HomeService.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +357,7 @@
 				0585A40F2930070300A0EDA2 /* LaunchScreen.storyboard in Resources */,
 				0585A40C2930070300A0EDA2 /* Assets.xcassets in Resources */,
 				0585A40A2930070200A0EDA2 /* Main.storyboard in Resources */,
+				0585A4452930106100A0EDA2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +382,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0585A453293014BF00A0EDA2 /* AppCoordinator.swift in Sources */,
 				0585A4072930070200A0EDA2 /* ViewController.swift in Sources */,
 				0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */,
+				0585A451293014B100A0EDA2 /* CoordinatorProtocol.swift in Sources */,
 				0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */,
+				0585A4492930107E00A0EDA2 /* HomeInteractor.swift in Sources */,
+				0585A44D293010A400A0EDA2 /* HomeContract.swift in Sources */,
+				0585A4472930107100A0EDA2 /* HomePresenter.swift in Sources */,
+				0585A44F293010B400A0EDA2 /* HomeService.swift in Sources */,
+				0585A44B2930108A00A0EDA2 /* HomeCoordinator.swift in Sources */,
+				0585A4432930104A00A0EDA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +573,7 @@
 				INFOPLIST_FILE = pruebafinal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +600,7 @@
 				INFOPLIST_FILE = pruebafinal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

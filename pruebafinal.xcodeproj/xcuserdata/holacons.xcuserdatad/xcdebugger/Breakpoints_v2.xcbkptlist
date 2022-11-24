@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9F41F565-9942-40CD-AD18-38A9F8EB670A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62E4464D-AA54-4B7B-A735-B3481D47A650"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pruebafinal/Classes/HomeService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "62E4464D-AA54-4B7B-A735-B3481D47A650 - 3cc8b6b07858c113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pruebafinal.HomeService.deinit"
+                  moduleName = "pruebafinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annaf/Desktop/pruebafinal/pruebafinal/Classes/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "62E4464D-AA54-4B7B-A735-B3481D47A650 - bf53eda5d94f2a6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pruebafinal.HomeService.__deallocating_deinit"
+                  moduleName = "pruebafinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annaf/Desktop/pruebafinal/pruebafinal/Classes/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "62E4464D-AA54-4B7B-A735-B3481D47A650 - cd170c803e88d946"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pruebafinal.HomeService.__allocating_init() -&gt; pruebafinal.HomeService"
+                  moduleName = "pruebafinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annaf/Desktop/pruebafinal/pruebafinal/Classes/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "62E4464D-AA54-4B7B-A735-B3481D47A650 - d94898ef348321f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "pruebafinal.HomeService.init() -&gt; pruebafinal.HomeService"
+                  moduleName = "pruebafinal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/annaf/Desktop/pruebafinal/pruebafinal/Classes/HomeService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "10"
+                  endingLineNumber = "10"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
