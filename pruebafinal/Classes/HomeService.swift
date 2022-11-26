@@ -9,4 +9,15 @@ import Foundation
 
 internal final class HomeService: HomeServiceProtocol {
     
+    private let responseApiService: ServiceApiProtocol
+    
+    init(responseApiService: ServiceApiProtocol = ServiceApi()) {
+        self.responseApiService = responseApiService
+    }
+    
+    func getPersonsService() -> ServiceApiProtocol {
+        return responseApiService
+    }
+    
 }
+ 

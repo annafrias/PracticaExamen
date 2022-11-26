@@ -20,4 +20,14 @@ internal final class HomeInteractor {
 
 extension HomeInteractor: HomeInteractorProtocol {
     
+    func getPersons(completion: @escaping (Result<ResponseProtocol, Error>) -> Void) {
+        
+        let personsService = homeService.getPersonsService()
+        personsService.getPersons { result in
+            completion(result)
+        }
+        
+    }
+    
+    
 }

@@ -9,12 +9,26 @@ import Foundation
 
 
 protocol HomeViewControllerProtocol {
+    func refreshTable()
+    
 }
 protocol HomePresenterProtocol {
     var view: HomeViewControllerProtocol? {get set}
+    func presentCharacters()
+    func getPersonsCount() -> Int
+    func getPersons(index: Int) -> PersonProtocol
+
     
 }
 
-protocol HomeInteractorProtocol {}
-protocol HomeServiceProtocol {}
+protocol HomeInteractorProtocol {
+    
+    func getPersons(completion: @escaping (Result<ResponseProtocol, Error>) -> Void)
+    
+}
+protocol HomeServiceProtocol {
+    
+   func getPersonsService() -> ServiceApiProtocol
+
+}
 protocol HomeCoordiantorProtocol {}

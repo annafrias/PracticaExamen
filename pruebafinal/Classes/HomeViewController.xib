@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="pruebafinal" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="LkT-aP-pjN" id="xVr-69-ysf"/>
                 <outlet property="label" destination="QGR-QG-Nqw" id="IrD-H5-wzH"/>
                 <outlet property="view" destination="oLz-FC-ewK" id="AyG-SD-l3q"/>
             </connections>
@@ -25,12 +26,26 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="LkT-aP-pjN">
+                    <rect key="frame" x="4" y="139" width="385" height="619"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ph7-Ga-NiM">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="8VN-Ow-N5N"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="8VN-Ow-N5N" firstAttribute="trailing" secondItem="LkT-aP-pjN" secondAttribute="trailing" constant="4" id="6I8-mb-CIV"/>
+                <constraint firstItem="LkT-aP-pjN" firstAttribute="top" secondItem="QGR-QG-Nqw" secondAttribute="bottom" constant="30" id="CNO-ZT-LMS"/>
+                <constraint firstItem="8VN-Ow-N5N" firstAttribute="bottom" secondItem="LkT-aP-pjN" secondAttribute="bottom" constant="60" id="NdZ-Kd-mHp"/>
                 <constraint firstItem="QGR-QG-Nqw" firstAttribute="top" secondItem="8VN-Ow-N5N" secondAttribute="top" constant="29" id="Od1-Va-zXa"/>
                 <constraint firstItem="QGR-QG-Nqw" firstAttribute="leading" secondItem="8VN-Ow-N5N" secondAttribute="leading" constant="54" id="XUU-dt-hII"/>
+                <constraint firstItem="LkT-aP-pjN" firstAttribute="leading" secondItem="8VN-Ow-N5N" secondAttribute="leading" constant="4" id="YAO-jv-XlY"/>
             </constraints>
             <point key="canvasLocation" x="91" y="31"/>
         </view>

@@ -11,6 +11,7 @@ internal final class HomePresenter {
     
     var view: HomeViewControllerProtocol?
     var interactor: HomeInteractorProtocol
+    var persons = [PersonProtocol]()
     
     
     init(interactor: HomeInteractorProtocol) {
@@ -19,4 +20,33 @@ internal final class HomePresenter {
     
 }
 extension HomePresenter: HomePresenterProtocol  {
+   
+    func getPersonsCount() -> Int {
+        return persons.count
+    }
+    
+    func getPersons(index: Int) -> PersonProtocol {
+         return persons[index]
+    }
+    
+    
+    func presentCharacters() {
+        
+        interactor.getPersons { result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let peopleApi):
+                self.persons.append(contentsOf: peopleApi.results)
+                print(peopleApi.results)
+                self.view?.refreshTable()
+            }
+            
+        }
+        
+    }
+    
 }
+
+
+

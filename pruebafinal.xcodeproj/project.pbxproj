@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053BA521293215B400DFAB3A /* PeopleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA520293215B400DFAB3A /* PeopleProtocol.swift */; };
+		053BA5232932174300DFAB3A /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5222932174300DFAB3A /* PersonApi.swift */; };
+		053BA5252932190E00DFAB3A /* ResponseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5242932190E00DFAB3A /* ResponseApi.swift */; };
+		053BA5272932194000DFAB3A /* ResponseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5262932194000DFAB3A /* ResponseProtocol.swift */; };
+		053BA52929321C2300DFAB3A /* ServiceApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA52829321C2300DFAB3A /* ServiceApiProtocol.swift */; };
+		053BA52B29321C3800DFAB3A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA52A29321C3800DFAB3A /* ServiceApi.swift */; };
+		053BA52D293226E800DFAB3A /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA52C293226E800DFAB3A /* CustomCollectionCell.swift */; };
+		053BA52F2932272A00DFAB3A /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053BA52E2932272A00DFAB3A /* CustomCollectionCell.xib */; };
 		0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4022930070200A0EDA2 /* AppDelegate.swift */; };
 		0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4042930070200A0EDA2 /* SceneDelegate.swift */; };
 		0585A4072930070200A0EDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4062930070200A0EDA2 /* ViewController.swift */; };
@@ -45,6 +53,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		053BA520293215B400DFAB3A /* PeopleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleProtocol.swift; sourceTree = "<group>"; };
+		053BA5222932174300DFAB3A /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
+		053BA5242932190E00DFAB3A /* ResponseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseApi.swift; sourceTree = "<group>"; };
+		053BA5262932194000DFAB3A /* ResponseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseProtocol.swift; sourceTree = "<group>"; };
+		053BA52829321C2300DFAB3A /* ServiceApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApiProtocol.swift; sourceTree = "<group>"; };
+		053BA52A29321C3800DFAB3A /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		053BA52C293226E800DFAB3A /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		053BA52E2932272A00DFAB3A /* CustomCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
 		0585A3FF2930070200A0EDA2 /* pruebafinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebafinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0585A4022930070200A0EDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0585A4042930070200A0EDA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +225,8 @@
 		0585A43D29300E8600A0EDA2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				053BA52829321C2300DFAB3A /* ServiceApiProtocol.swift */,
+				053BA52A29321C3800DFAB3A /* ServiceApi.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -225,6 +243,8 @@
 		0585A43F29300EB400A0EDA2 /* ModelAPI */ = {
 			isa = PBXGroup;
 			children = (
+				053BA5222932174300DFAB3A /* PersonApi.swift */,
+				053BA5242932190E00DFAB3A /* ResponseApi.swift */,
 			);
 			name = ModelAPI;
 			sourceTree = "<group>";
@@ -232,6 +252,8 @@
 		0585A44029300EBD00A0EDA2 /* ModelProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				053BA520293215B400DFAB3A /* PeopleProtocol.swift */,
+				053BA5262932194000DFAB3A /* ResponseProtocol.swift */,
 			);
 			name = ModelProtocol;
 			sourceTree = "<group>";
@@ -246,6 +268,8 @@
 				0585A44C293010A400A0EDA2 /* HomeContract.swift */,
 				0585A44A2930108A00A0EDA2 /* HomeCoordinator.swift */,
 				0585A44E293010B400A0EDA2 /* HomeService.swift */,
+				053BA52C293226E800DFAB3A /* CustomCollectionCell.swift */,
+				053BA52E2932272A00DFAB3A /* CustomCollectionCell.xib */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -357,6 +381,7 @@
 				0585A40F2930070300A0EDA2 /* LaunchScreen.storyboard in Resources */,
 				0585A40C2930070300A0EDA2 /* Assets.xcassets in Resources */,
 				0585A40A2930070200A0EDA2 /* Main.storyboard in Resources */,
+				053BA52F2932272A00DFAB3A /* CustomCollectionCell.xib in Resources */,
 				0585A4452930106100A0EDA2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,16 +407,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053BA52929321C2300DFAB3A /* ServiceApiProtocol.swift in Sources */,
+				053BA52B29321C3800DFAB3A /* ServiceApi.swift in Sources */,
 				0585A453293014BF00A0EDA2 /* AppCoordinator.swift in Sources */,
 				0585A4072930070200A0EDA2 /* ViewController.swift in Sources */,
 				0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */,
 				0585A451293014B100A0EDA2 /* CoordinatorProtocol.swift in Sources */,
 				0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */,
 				0585A4492930107E00A0EDA2 /* HomeInteractor.swift in Sources */,
+				053BA52D293226E800DFAB3A /* CustomCollectionCell.swift in Sources */,
+				053BA5272932194000DFAB3A /* ResponseProtocol.swift in Sources */,
 				0585A44D293010A400A0EDA2 /* HomeContract.swift in Sources */,
+				053BA5252932190E00DFAB3A /* ResponseApi.swift in Sources */,
 				0585A4472930107100A0EDA2 /* HomePresenter.swift in Sources */,
+				053BA5232932174300DFAB3A /* PersonApi.swift in Sources */,
 				0585A44F293010B400A0EDA2 /* HomeService.swift in Sources */,
 				0585A44B2930108A00A0EDA2 /* HomeCoordinator.swift in Sources */,
+				053BA521293215B400DFAB3A /* PeopleProtocol.swift in Sources */,
 				0585A4432930104A00A0EDA2 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

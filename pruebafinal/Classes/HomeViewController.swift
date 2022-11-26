@@ -11,7 +11,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var label: UILabel!
+    
+    
     
     var presenter: HomePresenterProtocol?
     var delegate: HomeCoordiantorProtocol?
@@ -23,11 +26,70 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewDidLoadExpand()
+      
+        
+        
+    }
+func  viewDidLoadExpand(){
+   
+    collectionView.delegate = self
+    collectionView.dataSource = self
+    createCell()
+    self.presenter?.presentCharacters()
+}
     
+}
+extension HomeViewController: HomeViewControllerProtocol {
+    func refreshTable() {
+        DispatchQueue.main.async{
+            
+            self.collectionView.reloadData()
+        }
     }
     
     
 }
-extension HomeViewController: HomeViewControllerProtocol {
+
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    
+    func createCell(){
+        
+        let cellNib =  UINib(nibName: "CustomCollectionCell", bundle: nil)
+        collectionView.register(cellNib, forCellWithReuseIdentifier: "customView")
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let rows = presenter?.getPersonsCount() else {
+            return 0
+        }
+        return rows
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customView", for: indexPath)
+                as? CustomCollectionCell else {
+            return CustomCollectionCell()
+        }
+        guard let personIndex = presenter?.getPersons(index: indexPath.row) else {
+            return CustomCollectionCell()
+            
+        }
+        
+        cell.labelName.text = personIndex.name
+        cell.labelSub.text = personIndex.height
+        return cell
+        
+        
+        
+    }
     
 }
+
