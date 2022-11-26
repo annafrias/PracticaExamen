@@ -22,4 +22,6 @@ enum genderEnum: String, Codable{
       case female = "female"
       case na = "n/a"
       case unknown = "unknown"
+      case hermaphrodite = "hermaphrodite"
+     case none = "none"
 }

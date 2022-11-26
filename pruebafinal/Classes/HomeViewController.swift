@@ -14,8 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var label: UILabel!
     
-    
-    
+  
     var presenter: HomePresenterProtocol?
     var delegate: HomeCoordiantorProtocol?
 
@@ -89,6 +88,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+       
+        guard let lastRows = presenter?.getPersonsCount() else { return}
+        guard let existNextPage = self.presenter?.checkNextCallExists() else { return }
+        
+        if indexPath.row == lastRows - 4 && existNextPage {
+            //self.isLoading = true
+            presenter?.presentCharacters()
+          
+        }
     }
     
 }

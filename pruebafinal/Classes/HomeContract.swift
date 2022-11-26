@@ -17,13 +17,13 @@ protocol HomePresenterProtocol {
     func presentCharacters()
     func getPersonsCount() -> Int
     func getPersons(index: Int) -> PersonProtocol
-
+    func checkNextCallExists() -> Bool
     
 }
 
 protocol HomeInteractorProtocol {
     
-    func getPersons(completion: @escaping (Result<ResponseProtocol, Error>) -> Void)
+    func getPersons(page: String, completion: @escaping (Result<ResponseProtocol, Error>) -> Void)
     
 }
 protocol HomeServiceProtocol {

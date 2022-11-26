@@ -12,15 +12,13 @@ public class ServiceApi: ServiceApiProtocol {
     
    
     
-    func getPersons(completion: @escaping (Result<ResponseProtocol, Error>) -> Void) {
+    func getPersons(page: String, completion: @escaping (Result<ResponseProtocol, Error>) -> Void) {
     
-        var urlpage = "https://swapi.dev/api/people/?page=1"
-        //urlpage.append(nextpage)
+        var urlpage = "https://swapi.dev/api/people/?page="
+        urlpage.append(page)
         guard let url = URL(string: urlpage) else { return }
         
         let urlSession = URLSession.shared
-        
-        
         urlSession.dataTask(with: url) { (data, response, error) in
             if let error{
                 completion(.failure(error))
