@@ -8,6 +8,7 @@
 import Foundation
 
 struct PersonAPI: PersonProtocol, Codable {
+    
     var name: String
     var height: String
     var gender: genderEnum

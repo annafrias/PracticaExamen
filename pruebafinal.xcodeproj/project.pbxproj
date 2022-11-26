@@ -20,6 +20,15 @@
 		053BA536293247D700DFAB3A /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA535293247D700DFAB3A /* HomeDetailInteractor.swift */; };
 		053BA53A2932483600DFAB3A /* HomeDetailVIiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5392932483600DFAB3A /* HomeDetailVIiewController.swift */; };
 		053BA53C29324C7700DFAB3A /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053BA53B29324C7700DFAB3A /* HomeDetailViewController.xib */; };
+		053BA54029326D8D00DFAB3A /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA53F29326D8D00DFAB3A /* TestConstants.swift */; };
+		053BA54329326E0D00DFAB3A /* HomeCoordinatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54229326E0D00DFAB3A /* HomeCoordinatorMock.swift */; };
+		053BA54529326E2300DFAB3A /* HomeInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54429326E2200DFAB3A /* HomeInteractorMock.swift */; };
+		053BA54729326E3E00DFAB3A /* HomeServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54629326E3E00DFAB3A /* HomeServiceMock.swift */; };
+		053BA54929326E4B00DFAB3A /* HomePresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54829326E4B00DFAB3A /* HomePresenterMock.swift */; };
+		053BA54C29326E6400DFAB3A /* HomeViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54B29326E6400DFAB3A /* HomeViewControllerMock.swift */; };
+		053BA54F29326ECC00DFAB3A /* ServiceApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA54E29326ECC00DFAB3A /* ServiceApiMock.swift */; };
+		053BA55229326F0900DFAB3A /* PersonApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA55129326F0900DFAB3A /* PersonApiMock.swift */; };
+		053BA554293274F500DFAB3A /* ResponseApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA553293274F500DFAB3A /* ResponseApiMock.swift */; };
 		0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4022930070200A0EDA2 /* AppDelegate.swift */; };
 		0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4042930070200A0EDA2 /* SceneDelegate.swift */; };
 		0585A4072930070200A0EDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4062930070200A0EDA2 /* ViewController.swift */; };
@@ -71,6 +80,15 @@
 		053BA535293247D700DFAB3A /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
 		053BA5392932483600DFAB3A /* HomeDetailVIiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVIiewController.swift; sourceTree = "<group>"; };
 		053BA53B29324C7700DFAB3A /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		053BA53F29326D8D00DFAB3A /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		053BA54229326E0D00DFAB3A /* HomeCoordinatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorMock.swift; sourceTree = "<group>"; };
+		053BA54429326E2200DFAB3A /* HomeInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorMock.swift; sourceTree = "<group>"; };
+		053BA54629326E3E00DFAB3A /* HomeServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceMock.swift; sourceTree = "<group>"; };
+		053BA54829326E4B00DFAB3A /* HomePresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterMock.swift; sourceTree = "<group>"; };
+		053BA54B29326E6400DFAB3A /* HomeViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerMock.swift; sourceTree = "<group>"; };
+		053BA54E29326ECC00DFAB3A /* ServiceApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApiMock.swift; sourceTree = "<group>"; };
+		053BA55129326F0900DFAB3A /* PersonApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApiMock.swift; sourceTree = "<group>"; };
+		053BA553293274F500DFAB3A /* ResponseApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseApiMock.swift; sourceTree = "<group>"; };
 		0585A3FF2930070200A0EDA2 /* pruebafinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebafinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0585A4022930070200A0EDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0585A4042930070200A0EDA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +150,51 @@
 			path = HomeDetail;
 			sourceTree = "<group>";
 		};
+		053BA53D29326D6900DFAB3A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				053BA53E29326D7600DFAB3A /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		053BA53E29326D7600DFAB3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				053BA54129326DF200DFAB3A /* HomeMocks */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		053BA54129326DF200DFAB3A /* HomeMocks */ = {
+			isa = PBXGroup;
+			children = (
+				053BA54229326E0D00DFAB3A /* HomeCoordinatorMock.swift */,
+				053BA54629326E3E00DFAB3A /* HomeServiceMock.swift */,
+				053BA54429326E2200DFAB3A /* HomeInteractorMock.swift */,
+				053BA54829326E4B00DFAB3A /* HomePresenterMock.swift */,
+				053BA54B29326E6400DFAB3A /* HomeViewControllerMock.swift */,
+			);
+			path = HomeMocks;
+			sourceTree = "<group>";
+		};
+		053BA54D29326EAA00DFAB3A /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				053BA54E29326ECC00DFAB3A /* ServiceApiMock.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		053BA55029326EDD00DFAB3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				053BA55129326F0900DFAB3A /* PersonApiMock.swift */,
+				053BA553293274F500DFAB3A /* ResponseApiMock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0585A3F62930070200A0EDA2 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +232,10 @@
 		0585A4182930070300A0EDA2 /* pruebafinalTests */ = {
 			isa = PBXGroup;
 			children = (
+				053BA53F29326D8D00DFAB3A /* TestConstants.swift */,
+				053BA54D29326EAA00DFAB3A /* Api */,
+				053BA55029326EDD00DFAB3A /* Model */,
+				053BA53D29326D6900DFAB3A /* Screens */,
 				0585A4192930070300A0EDA2 /* pruebafinalTests.swift */,
 			);
 			path = pruebafinalTests;
@@ -461,6 +528,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0585A41A2930070300A0EDA2 /* pruebafinalTests.swift in Sources */,
+				053BA54C29326E6400DFAB3A /* HomeViewControllerMock.swift in Sources */,
+				053BA54529326E2300DFAB3A /* HomeInteractorMock.swift in Sources */,
+				053BA554293274F500DFAB3A /* ResponseApiMock.swift in Sources */,
+				053BA54729326E3E00DFAB3A /* HomeServiceMock.swift in Sources */,
+				053BA54929326E4B00DFAB3A /* HomePresenterMock.swift in Sources */,
+				053BA54329326E0D00DFAB3A /* HomeCoordinatorMock.swift in Sources */,
+				053BA54F29326ECC00DFAB3A /* ServiceApiMock.swift in Sources */,
+				053BA54029326D8D00DFAB3A /* TestConstants.swift in Sources */,
+				053BA55229326F0900DFAB3A /* PersonApiMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

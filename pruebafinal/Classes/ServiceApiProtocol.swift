@@ -10,8 +10,7 @@ import Foundation
 
 protocol ServiceApiProtocol{
     
-    func getPersonsResults( completion: @escaping (Result<[PersonProtocol], Error>) -> Void)
-    
+   
     func getPersons( page: String,  completion: @escaping (Result<ResponseProtocol, Error>) -> Void)
     
     

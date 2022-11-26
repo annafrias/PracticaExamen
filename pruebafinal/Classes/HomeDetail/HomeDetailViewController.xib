@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeDetailViewController" customModule="pruebafinal" customModuleProvider="target">
             <connections>
+                <outlet property="labelHeight" destination="OSq-hq-ufJ" id="TTS-hd-jcD"/>
+                <outlet property="labelName" destination="uKZ-Vw-7Ry" id="YMO-Cv-tQr"/>
                 <outlet property="view" destination="Rdx-Mc-qjE" id="RGz-xS-beU"/>
             </connections>
         </placeholder>

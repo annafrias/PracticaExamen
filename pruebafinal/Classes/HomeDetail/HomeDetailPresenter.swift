@@ -20,4 +20,10 @@ class HomeDetailPresenter {
 
 extension  HomeDetailPresenter: HomeDetailPresenterProtocol {
     
+    func loadData(){
+        let personsDetail =  interactor.getPerson()
+        view?.loadInfo(personDetail: personsDetail)
+    }
+                       
+    
 }

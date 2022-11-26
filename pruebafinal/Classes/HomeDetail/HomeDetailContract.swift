@@ -14,7 +14,7 @@ protocol HomeDetailInteractorProtocol  {
 
 protocol HomeDetailPresenterProtocol {
     var view: HomeDetailViewProtocol? { get set }
- 
+    func  loadData()
     
 }
 

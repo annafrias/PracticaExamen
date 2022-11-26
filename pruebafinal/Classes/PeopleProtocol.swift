@@ -14,6 +14,7 @@ protocol PersonProtocol: Codable {
     var height: String {get set}
     var gender: genderEnum {get set}
     var homeworld: String {get set}
+
     
 }
 
@@ -23,5 +24,5 @@ enum genderEnum: String, Codable{
       case na = "n/a"
       case unknown = "unknown"
       case hermaphrodite = "hermaphrodite"
-     case none = "none"
+      case none = "none"
 }

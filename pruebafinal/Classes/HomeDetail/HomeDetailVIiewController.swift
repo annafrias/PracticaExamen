@@ -11,6 +11,8 @@ import UIKit
 
 class HomeDetailViewController: UIViewController {
     
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelHeight: UILabel!
     var presenter: HomeDetailPresenterProtocol?
     
     
@@ -19,10 +21,18 @@ class HomeDetailViewController: UIViewController {
         self.presenter = presenter
     }
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        presenter?.loadData()
+    }
 }
 extension HomeDetailViewController: HomeDetailViewProtocol {
     func loadInfo(personDetail: PersonProtocol) {
         
+        self.labelName.text = personDetail.name
+        self.labelHeight.text = personDetail.height
     }
     
     
