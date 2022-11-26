@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol HomeViewControllerProtocol {
@@ -31,4 +32,8 @@ protocol HomeServiceProtocol {
    func getPersonsService() -> ServiceApiProtocol
 
 }
-protocol HomeCoordiantorProtocol {}
+protocol HomeCoordiantorProtocol {
+    
+    func goToDetailScreen(personDetail: PersonProtocol, sender: UIViewController)
+    
+}

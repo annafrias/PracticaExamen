@@ -15,6 +15,11 @@
 		053BA52B29321C3800DFAB3A /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA52A29321C3800DFAB3A /* ServiceApi.swift */; };
 		053BA52D293226E800DFAB3A /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA52C293226E800DFAB3A /* CustomCollectionCell.swift */; };
 		053BA52F2932272A00DFAB3A /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053BA52E2932272A00DFAB3A /* CustomCollectionCell.xib */; };
+		053BA5322932478B00DFAB3A /* HomeDetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5312932478B00DFAB3A /* HomeDetailContract.swift */; };
+		053BA534293247AB00DFAB3A /* HomeDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA533293247AB00DFAB3A /* HomeDetailPresenter.swift */; };
+		053BA536293247D700DFAB3A /* HomeDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA535293247D700DFAB3A /* HomeDetailInteractor.swift */; };
+		053BA53A2932483600DFAB3A /* HomeDetailVIiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053BA5392932483600DFAB3A /* HomeDetailVIiewController.swift */; };
+		053BA53C29324C7700DFAB3A /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 053BA53B29324C7700DFAB3A /* HomeDetailViewController.xib */; };
 		0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4022930070200A0EDA2 /* AppDelegate.swift */; };
 		0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4042930070200A0EDA2 /* SceneDelegate.swift */; };
 		0585A4072930070200A0EDA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0585A4062930070200A0EDA2 /* ViewController.swift */; };
@@ -61,6 +66,11 @@
 		053BA52A29321C3800DFAB3A /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
 		053BA52C293226E800DFAB3A /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		053BA52E2932272A00DFAB3A /* CustomCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
+		053BA5312932478B00DFAB3A /* HomeDetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailContract.swift; sourceTree = "<group>"; };
+		053BA533293247AB00DFAB3A /* HomeDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailPresenter.swift; sourceTree = "<group>"; };
+		053BA535293247D700DFAB3A /* HomeDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailInteractor.swift; sourceTree = "<group>"; };
+		053BA5392932483600DFAB3A /* HomeDetailVIiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVIiewController.swift; sourceTree = "<group>"; };
+		053BA53B29324C7700DFAB3A /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
 		0585A3FF2930070200A0EDA2 /* pruebafinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebafinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0585A4022930070200A0EDA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0585A4042930070200A0EDA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +120,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		053BA5302932472400DFAB3A /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				053BA5312932478B00DFAB3A /* HomeDetailContract.swift */,
+				053BA533293247AB00DFAB3A /* HomeDetailPresenter.swift */,
+				053BA535293247D700DFAB3A /* HomeDetailInteractor.swift */,
+				053BA5392932483600DFAB3A /* HomeDetailVIiewController.swift */,
+				053BA53B29324C7700DFAB3A /* HomeDetailViewController.xib */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
 		0585A3F62930070200A0EDA2 = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +283,7 @@
 		0585A4412930102D00A0EDA2 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				053BA5302932472400DFAB3A /* HomeDetail */,
 				0585A4422930104A00A0EDA2 /* HomeViewController.swift */,
 				0585A4442930106100A0EDA2 /* HomeViewController.xib */,
 				0585A4462930107100A0EDA2 /* HomePresenter.swift */,
@@ -382,6 +405,7 @@
 				0585A40C2930070300A0EDA2 /* Assets.xcassets in Resources */,
 				0585A40A2930070200A0EDA2 /* Main.storyboard in Resources */,
 				053BA52F2932272A00DFAB3A /* CustomCollectionCell.xib in Resources */,
+				053BA53C29324C7700DFAB3A /* HomeDetailViewController.xib in Resources */,
 				0585A4452930106100A0EDA2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,17 +431,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				053BA534293247AB00DFAB3A /* HomeDetailPresenter.swift in Sources */,
 				053BA52929321C2300DFAB3A /* ServiceApiProtocol.swift in Sources */,
 				053BA52B29321C3800DFAB3A /* ServiceApi.swift in Sources */,
 				0585A453293014BF00A0EDA2 /* AppCoordinator.swift in Sources */,
 				0585A4072930070200A0EDA2 /* ViewController.swift in Sources */,
 				0585A4032930070200A0EDA2 /* AppDelegate.swift in Sources */,
 				0585A451293014B100A0EDA2 /* CoordinatorProtocol.swift in Sources */,
+				053BA53A2932483600DFAB3A /* HomeDetailVIiewController.swift in Sources */,
 				0585A4052930070200A0EDA2 /* SceneDelegate.swift in Sources */,
 				0585A4492930107E00A0EDA2 /* HomeInteractor.swift in Sources */,
+				053BA536293247D700DFAB3A /* HomeDetailInteractor.swift in Sources */,
 				053BA52D293226E800DFAB3A /* CustomCollectionCell.swift in Sources */,
 				053BA5272932194000DFAB3A /* ResponseProtocol.swift in Sources */,
 				0585A44D293010A400A0EDA2 /* HomeContract.swift in Sources */,
+				053BA5322932478B00DFAB3A /* HomeDetailContract.swift in Sources */,
 				053BA5252932190E00DFAB3A /* ResponseApi.swift in Sources */,
 				0585A4472930107100A0EDA2 /* HomePresenter.swift in Sources */,
 				053BA5232932174300DFAB3A /* PersonApi.swift in Sources */,

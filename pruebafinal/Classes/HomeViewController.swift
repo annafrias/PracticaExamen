@@ -102,5 +102,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        guard let personIndex = self.presenter?.getPersons(index: indexPath.row) else {
+            return
+            
+        }
+        self.delegate?.goToDetailScreen(personDetail: personIndex, sender: self)
+    }
+    
 }
 

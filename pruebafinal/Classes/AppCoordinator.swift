@@ -11,7 +11,7 @@ import UIKit
 class AppCoordinator: Coordinator {
     
     var window: UIWindow
-    
+    var childCoordinators: [Coordinator] = []
     
     lazy var navigationController: UINavigationController = {
         getNavigation()
@@ -36,11 +36,12 @@ class AppCoordinator: Coordinator {
     }
     
     func showHome() {
+        let coordinator = HomeCoordinator()
         let interactor = HomeInteractor()
         let presenter = HomePresenter(interactor: interactor)
         let view = HomeViewController(presenter: presenter)
         
-       // view.delegate = coordinator
+        view.delegate = coordinator
         presenter.view = view
         
         navigationController.setViewControllers([view], animated: true)

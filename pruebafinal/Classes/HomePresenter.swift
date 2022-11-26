@@ -12,6 +12,7 @@ internal final class HomePresenter {
     var view: HomeViewControllerProtocol?
     var interactor: HomeInteractorProtocol
     var persons = [PersonProtocol]()
+    
     var page = "1"
     var next: String?
     
