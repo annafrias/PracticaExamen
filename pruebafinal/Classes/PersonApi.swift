@@ -32,5 +32,13 @@ struct PersonAPI: PersonProtocol, Codable {
     }
     
 
+    func encode(to encoder: Encoder) throws {
+    var container = encoder.container(keyedBy: CodingKeys.self)
+            
+    try container.encode(name, forKey: .name)
+    try container.encode(height, forKey: .height)
+    try container.encode(gender, forKey: .gender)
+    try container.encode(homeworld, forKey: .homeworld)
+        }
     
 }

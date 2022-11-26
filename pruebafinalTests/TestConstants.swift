@@ -14,7 +14,7 @@ struct TestConstants {
     static let personsMock = [personMock]
     static let responseApiMock = ResponseApiMock(count: 3, next: "ss", previous: "sss", results: personsMock )
     
-     
+
     
 }
 

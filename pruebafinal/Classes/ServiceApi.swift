@@ -28,8 +28,11 @@ public class ServiceApi: ServiceApiProtocol {
             ////////////IGUAL
             if let data {
                 do{
+                  
                     let personResults = try JSONDecoder().decode(ResponseApi.self, from: data)
                     completion(.success(personResults))
+                    StoreManager.shared.saveRespApi(apiresult: [personResults])
+                    
                     
                 }  catch let DecodingError.dataCorrupted(context) {
                     print(context)

@@ -8,15 +8,16 @@
 import Foundation
 @testable import pruebafinal
 
-struct ResponseApiMock {
+struct ResponseApiMock: ResponseProtocol {
+
+    
     var count: Int
     
     var next: String?
     
     var previous: String?
     
-    //esto no se yo si esta bien
-    var results: [PersonProtocol]
+    var results: [PersonAPI]
     
     
 }

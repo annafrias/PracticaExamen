@@ -9,18 +9,24 @@ import Foundation
 @testable import pruebafinal
 
 class HomeInteractorMock: HomeInteractorProtocol {
-    
-    var showError = false
     func getPersons(page: String, completion: @escaping (Result<pruebafinal.ResponseProtocol, Error>) -> Void) {
-        
-//        if showError{
+        <#code#>
+    }
+    
+    
+//    var showError = false
+//    func getPersons(page: String, completion: @escaping (Result<pruebafinal.ResponseProtocol, Error>) -> Void) {
+//
+//       if showError{
 //            completion(.failure(TestConstants.errorTest))
 //        }
 //        else {
-//            completion(.success(TestConstants.))
+//           completion(.success(TestConstants.personsMock))
 //        }
-        
-    }
-    
+//
+//    }
+//
+//
+
     
 }
