@@ -12,7 +12,7 @@ protocol ResponseProtocol : Codable{
     var count: Int {get set}
     var next: String? {get set}
     var previous: String? {get set}
-   var results: [PersonAPI] {get set }
+    var results: [PersonAPI] {get set }
     //var results: [PersonProtocol] {get set}
     
 }

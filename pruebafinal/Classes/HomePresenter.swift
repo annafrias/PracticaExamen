@@ -13,6 +13,7 @@ internal final class HomePresenter {
     var interactor: HomeInteractorProtocol
     var persons = [PersonProtocol]()
     
+    
     var page = "1"
     var next: String?
     

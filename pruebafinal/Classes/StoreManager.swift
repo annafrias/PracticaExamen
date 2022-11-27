@@ -9,10 +9,11 @@ import Foundation
 
 struct StoreManager {
     static let shared = StoreManager()
+    
 
-    func saveRespApi(apiresult: ResponseProtocol)
+    func saveRespApi(apiresult: [ResponseProtocol])
     {
-        guard let apiobj = apiresult as? ResponseProtocol else {
+        guard let apiobj = apiresult as? [ResponseApi] else {
             return
         }
         do {
@@ -34,13 +35,13 @@ struct StoreManager {
         }
     }
 
-   func getApiObject() -> ResponseApi? {
+   func getApiObject() -> [ResponseApi]? {
         let cachesDirectory = getCachesDirectory()
         let storageURL = cachesDirectory.appendingPathComponent("apiobj.json",
                                                                    isDirectory: false)
 
         guard let apiData = try? Data(contentsOf: storageURL),
-             let apiObject = try? JSONDecoder().decode(ResponseApi.self, from: apiData) else {
+             let apiObject = try? JSONDecoder().decode([ResponseApi].self, from: apiData) else {
             return nil
         }
 
