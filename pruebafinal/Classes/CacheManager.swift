@@ -18,9 +18,10 @@ struct CacheManager {
                 print(error)
             case .success(let apiresult):
                 
-                StoreManager.shared.saveRespApi(apiresult: [apiresult])
+                StoreManager.shared.saveRespApi(apiresult: apiresult)
                 
             }
+          
         }
     }
 }

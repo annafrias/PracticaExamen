@@ -22,16 +22,22 @@ public class ServiceApi: ServiceApiProtocol {
         urlSession.dataTask(with: url) { (data, response, error) in
             if let error{
                 completion(.failure(error))
-                print(error)
+                if let obj = StoreManager.shared.getApiObject() {
+                                completion(.success(obj))
+                                } else {
+                                completion(.failure(error))
+                                }
+                
                 return
             }
-            ////////////IGUAL
+          
+            
             if let data {
                 do{
                   
                     let personResults = try JSONDecoder().decode(ResponseApi.self, from: data)
                     completion(.success(personResults))
-                    StoreManager.shared.saveRespApi(apiresult: [personResults])
+                    StoreManager.shared.saveRespApi(apiresult: personResults)
                     
                     
                 }  catch let DecodingError.dataCorrupted(context) {
@@ -60,7 +66,7 @@ public class ServiceApi: ServiceApiProtocol {
     
     
     
-    // solo nos quedamos el result
+    // solo nos quedamos el result, ELIMINAR ESTO
     func getPersonsResults(completion: @escaping (Result<[PersonProtocol], Error>) -> Void) {
     
         var urlpage = "https://swapi.dev/api/people/?page=1"
